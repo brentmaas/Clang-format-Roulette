@@ -4,7 +4,7 @@ def randbool():
 	return random.choice(("true", "false"))
 
 def randint(maxv=2**31):
-	return random.randint(maxv)
+	return random.randint(0, maxv)
 
 def choose(a):
 	return random.choice(a)
