@@ -1,13 +1,13 @@
-import numpy as np
+import random
 
 def randbool():
-	return "true" if np.random.choice(2) else "false"
+	return random.choice(("true", "false"))
 
 def randint(maxv=2**31):
-	return np.random.randint(0,maxv)
+	return random.randint(maxv)
 
 def choose(a):
-	return a[np.random.randint(len(a))]
+	return random.choice(a)
 	
 with open(".clang-format", 'w') as file:
 	def w(option, value):
